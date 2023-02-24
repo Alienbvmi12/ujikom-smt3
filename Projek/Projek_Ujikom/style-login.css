@@ -1,0 +1,60 @@
+*{
+			transition : 0.5s;
+			}
+		.wadah-form{
+			margin : auto;
+			width : 317px;  
+			color : black; margin-top : 27vh; 
+			border-radius : 15px;
+			box-shadow : 1px 1px 10px rgba(0, 0, 0, 0.5);
+			overflow : hidden;
+			background-color : white;
+			z-index : -3;
+			}
+		#tulisan-login{
+			background-color : black; 
+			color : white; 
+			text-align : center; 
+			padding : 10px;
+			}
+		#conten-form input[type=text], #conten-form input[type=password], #conten-form input[type=email] {
+			border-top : 0 none transparent; 
+			border-left : 0 none transparent; 
+			border-right : 0 none transparent; 
+			border-bottom : 1px solid black;
+			width : 100%; font-size : 18px; 
+			margin-bottom : 9px; 
+			transition : 0.5s; 
+			background-color : transparent; 
+			z-index : 1;
+			}
+		#conten-form input[type=text]:focus, #conten-form input[type=password]:focus, #conten-form input[type=email]:focus{
+			border-bottom : 1px solid orange; 
+			transition : 0.5s; 
+			transform-origin : center; 
+			outline : none;
+			}
+		body{
+			background: linear-gradient(yellow, orange);
+			background-size : 100%; 
+			background-repeat : no-repeat;
+			height : 73vh;
+			}
+		#conten-form{
+			padding : 20px;
+			background-color : transparent;
+			z-index : -2;
+			}
+		#pass{
+			margin-top : 10px;
+		}
+		#mail{
+			margin-top : 10px;
+		}
+		#passc{
+			margin-top : 10px;
+		}
+		#effect{
+		width : 100%;
+		background-color : white;
+		}

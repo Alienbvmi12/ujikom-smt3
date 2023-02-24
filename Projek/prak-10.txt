@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+
+
+
+
+<title> prak_10 </title>
+
+<link rel="icon" type="image/png" href="el.png">
+
+<style>
+
+body{font-family : arial; background-color : ivory; margin : 0; cursor : url('el2.gif'), url('el.cur'), auto;}
+
+.judul{position : fixed; top : 0; background-color : olive; color : white; border : 1px solid olive; text-align : center; padding : 10px; width : 100%;}
+
+.logo{position : fixed; top : 0; background-color : olive;  border : 1px solid olive; text-align : center; padding : 10px; width : 9%; left : 0; height : 79.5px; z-index : 1;}
+
+.navbar{float : left; border : 1px solid olive; height : 100%; position : fixed; top : 0; background-color : olive; text-align : center; margin-left : 0px; min-width: 10%;}
+
+.isi{float  : left ; width :80%; padding : 4%; margin-left : 10%; }
+
+.berubah{padding : 1%; transition : 0.5s; }
+
+.berubah:hover{ background-color : #545402; padding : 0.01%;}
+
+
+.navbar a{color : white; text-decoration : none;}
+.navbar b{color : white; text-decoration : none;}
+
+::-webkit-scrollbar{width : 10px;}
+::-webkit-scrollbar-track{background : olive;}
+::-webkit-scrollbar-thumb{background : #ffc502;}
+
+.isi-animation{animation : animasi 1000ms ease-in-out forwards; transform-origin : center;}
+@keyframes animasi{ 0%{transform : scale(0)} 100%{transform : scale(1)}}
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+				<!--Div 1, Judul atau heading dan logo-->
+
+
+
+<div class="logo"><img src="el.png" style="width : 40%; margin-top : 2.5%; margin-left : 0;"></div>
+
+<div class="judul">
+<center>
+<p><h1>Info Elektronika SMKN 1 katapang</h1></p>
+</center>
+</div>
+
+
+
+
+
+
+
+				<!--Div 2, Navigation bar-->
+
+
+
+
+
+<div class="navbar">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p><b>Contents</b></p>
+
+<br>
+
+<a href="prak-10.html"><div class="berubah"><p>Home</p></div></a>
+
+<a href="e-tujuan.html"><div class="berubah"><p>Tujuan</p></div></a>
+
+<a href="e-materi.html"><div class="berubah"><p>Materi</p></div></a>
+
+<a href="e-fasilitas.html"><div class="berubah"><p>Fasilitas</p></div></a>
+
+<a href="e-detail.html"><div class="berubah"><p>Detail</p></div></a>
+
+<a href="e-profilpenulis.html"><div class="berubah"><p>Profil Penulis</p></div></a>
+
+<a href="e-kaprog.html"><div class="berubah"><p>Kaprog</p></div></a>
+
+
+
+</div>
+
+
+
+
+
+				<!--Div 3, Isi dari web-->
+
+
+
+
+
+
+
+<div class="isi isi-animation">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+
+<h2>Home</h2>
+
+</center>
+
+<ul>
+
+<h3>Elektronika</h3>
+<p>Jurusan yang dibentuk dari penggabungan jurusan Teknik elektronika industri dengan Mekatronika. Hasil kebijakan pemerintah yang pada kurikulum merdeka. Pada tingkat 10, para siswa/i akan mempelajari dasar kompetensi keahlian yang sama. Ketika naik ke tingkat 11, siswa/i bisa memilih konsentrasi kompetensi keahlian, konsentrasi kompetensi keahliannya adalah :</p>
+
+
+
+<li><b>Teknik Elektronika industri</b></li>
+
+<p>TEKNIK ELEKTRONIKA INDUSTRI (TEI) Teknik Elektronik Industri (TEI) adalah bidang yang fokus mempelajari tentang komponen listrik serta berbagai macam peralatan semi konduktor.</p>
+
+<p>Dalam perjalanan Paket keahlian Elektronika Industri sejak berdiri tahun 1999 mengalami beberapa perubahan struktur kurikulum dan untuk saat ini menggunakan struktur kurikulum 2013. Hal ini bertujuan untuk memperlancar proses perjalanan pembelajaran Paket Keahlian Elektronika Industri.</p>
+
+
+
+<li><b>Mekatronika</b></li>
+
+<p>Ilmu teknik mekatronika sinergis (gabungan) dari beberapa cabang ilmu keteknikan, seperti teknik mesin/mekanik, teknik kendali, teknik elektro, dan ilmu komputasi (computer science, software and hardware).</p>
+
+
+
+<p>Kompetensi Keahlian Teknik Mekatronika di SMK Negeri Katapang telah ada sejak tahun 2014 dimulai dengan program 3 tahun. Program 4 tahun dimulai pada tahun 2017. Dan ketika kurikulum berubah ke kurikulum Merdeka di tahun 2021, Masa pembelajaran di ubah menjadi 3 tahun kembali</p>
+
+
+<br>
+<br>
+<br>
+
+<h2 style="color : black; text-align : center;"><i>~Jadilah teknisi yang profesional dan berakhlak mulia~</i></h2>
+
+
+</div>
+
+
+
+
+</body>
+
+</html>
+

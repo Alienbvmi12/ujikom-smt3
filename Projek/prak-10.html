@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+
+
+
+
+<title>Elektronika Katapang</title>
+
+<link rel="icon" type="image/png" href="http://elektro1ktp.epizy.com/el.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+body{font-family : arial; background-color : ivory; margin : 0; cursor: url("el5.png"), auto;}
+.judul{position : fixed; top : 0; background-color : olive; color : white; border : 1px solid olive; text-align : center;min-width : 90%; max-width : 90%; margin-left : 10%;z-index : 2;}
+.logo{position : fixed; top : 0; background-color : rgba(00, 00, 00, 0);text-align : center; padding : 10px; min-width : 120px; left : 0; height : 79.5px; z-index : 3;}
+.navbar{ border : 1px solid olive; height : 100vh; position : fixed; top : 0; background-color : olive; text-align : center; margin-left : 0px; width: 10%; padding-top : 55px;}
+
+.isi{float  : left ; width :78%; padding : 4%; margin-left : 12%; padding-top : 100px; }
+.berubah{padding : 1px 20px; transition : 0.5s; width : 100%; background-color : olive; border : none; color : white;}
+.berubah:hover{ background-color : #545402;}
+
+.navbar a{color : white; text-decoration : none;}
+.navbar b{color : white; text-decoration : none;}
+.judul h1{margin-left : 20px; margin-right : 20px;}
+
+
+/*Animasi*/ 
+
+
+.isi-animation{animation : animasi 1000ms ease-in-out forwards; transform-origin : top center;}
+@keyframes animasi{ 0%{transform : scale(0)} 100%{transform : scale(1)}}
+
+.dropdown-menu-animation {animation : animas 500ms ease-in-out forwards; transform-origin : top center;}
+@keyframes animas{ 0%{transform : scaleY(0)} 100%{transform : scaleY(1)}}
+
+
+/*Untuk mobile*/
+
+
+.navbar2{display : none; position : fixed; background-color : black; color : white; border : 1px solid black; text-align : center; padding : 0; width : 100%; z-index : 1;  margin-top : 65px;}
+.berubah2{padding : 1px 20px; transition : 0.5s;float : left;}
+.berubah2:hover{color : gray; padding : 0.01%;}
+
+.dropdown{display : inline-block; float : left; position : relative;}
+.butang{color : white; padding : 16px 20px; background-color : black;}
+.dropdown-menu{display : none ; background-color : black;border-top : 0;position : fixed; min-width : 20px;}
+.dropdown-menu a{display : block; text-decoration : none;}
+.dropdown:hover .dropdown-menu{display : block;}
+
+.navbar2 a{color : white; text-decoration : none;}
+.navbar2 b{color : white; text-decoration : none;}
+
+
+/*Pengaturan tampilan*/
+
+
+@media only screen and (max-width : 895px){
+.isi{margin-left : 18%; width : 72%;}
+.footer{margin-top : 100vh;}
+}
+
+@media only screen and (max-width : 693px){
+
+.navbar{display : none;}
+.navbar2{display : block;}
+.judul{font-size : 13px; min-width : 100%; max-width : 100%;  margin-left : 0; top : 0; position : fixed;}
+.logo{display : none;}
+.isi{width : 100%; margin-left : 0; padding-top : 150px; }
+.berubah{float : right;}
+.footer{margin-top : 105vh}
+}
+@media only screen and (max-width : 427px){ 
+
+.navbar2{margin-top : 95px;}
+.logo{top : 79.5px; display : none;}
+.isi{padding-top : 193px;}
+
+}
+
+::-webkit-scrollbar{width : 10px;}
+::-webkit-scrollbar-track{background : olive;}
+::-webkit-scrollbar-thumb{background : #ffc502;}
+
+.porfile img{
+	width : 120px;
+	s
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+
+
+
+				<!--Div 1, Judul atau heading dan logo-->
+
+
+
+<div class="logo"><a href="http://elektro1ktp.epizy.com/el.png"><img src="el.png" style="width : 55px; margin-top : 2.5%; margin-left : 0;"></a></div>
+
+<div class="judul">
+<center>
+<p><h1>Info Elektronika SMKN 1 katapang</h1></p>
+</center>
+</div>
+
+
+
+
+
+
+
+				<!--Div 2, Navigation bar-->
+
+
+					<!--navbar desktop-->
+
+
+<div class="navbar">
+<br>
+<br>
+<br>
+
+<center><p><b>Contents</b></p></center>
+
+<br>
+
+<button class="berubah" onclick="a()"><p>Home</p></button>
+<button class="berubah" onclick="b()"><p>Tujuan</p></button>
+<button class="berubah" onclick="c()"><p>Materi</p></button>
+<button class="berubah" onclick="d()"><p>Fasilitas</p></button>
+<button class="berubah" onclick="e()"><p>Detail</p></button>
+<button class="berubah" onclick="f()"><p>Profil Penulis</p></button>
+<button class="berubah" onclick="g()"><p>Kaprog</p></button>
+<a href="Projek_Ujikom/peminjaman.php"><div class="berubah2"><p>Peminjaman barang</p></div></div>
+
+
+
+</div>
+
+					<!--navbar mobile & pad-->
+
+<div class="navbar2">
+
+<div class="berubah2"  onclick="a()"><p>Home</p></div>
+
+<div class="dropdown">
+
+<div class="butang">Menu</div>
+
+<div class="dropdown-menu dropdown-menu-animation">
+
+<div class="berubah2" onclick="b()"><p>Tujuan</p></div>
+
+<div class="berubah2"  onclick="c()"><p>Materi</p></div>
+
+<div class="berubah2" onclick="d()"><p>Fasilitas</p></div>
+
+<div class="berubah2" onclick="e()"><p>Detail</p></div>
+
+<a href="Projek_Ujikom/peminjaman.php"><div class="berubah2"><p>Peminjaman barang</p></div>
+
+
+</div>
+</div>
+
+<div class="dropdown">
+<div class="butang">Contact</div>
+<div class="dropdown-menu dropdown-menu-animation">
+<div class="berubah2"  onclick="f()"><p>Profil Penulis</p></div></a>
+<div class="berubah2" onclick="g()"><p>Kaprog</p></div></a>
+
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+				<!--Div 3, Isi dari web-->
+
+
+
+
+
+
+
+<div class="isi isi-animation">
+<center>
+<h2>Home</h2>
+</center>
+<ul>
+<h3>Elektronika</h3>
+<p>Jurusan yang dibentuk dari penggabungan jurusan Teknik elektronika industri dengan Mekatronika. Hasil kebijakan pemerintah yang pada kurikulum merdeka. Pada tingkat 10, para siswa/i akan mempelajari dasar kompetensi keahlian yang sama. Ketika naik ke tingkat 11, siswa/i bisa memilih konsentrasi kompetensi keahlian, konsentrasi kompetensi keahliannya adalah :</p>
+<li><b>Teknik Elektronika industri</b></li>
+<p>TEKNIK ELEKTRONIKA INDUSTRI (TEI) Teknik Elektronik Industri (TEI) adalah bidang yang fokus mempelajari tentang komponen listrik serta berbagai macam peralatan semi konduktor.</p>
+<p>Dalam perjalanan Paket keahlian Elektronika Industri sejak berdiri tahun 1999 mengalami beberapa perubahan struktur kurikulum dan untuk saat ini menggunakan struktur kurikulum 2013. Hal ini bertujuan untuk memperlancar proses perjalanan pembelajaran Paket Keahlian Elektronika Industri.</p>
+<li><b>Mekatronika</b></li>
+<p>Ilmu teknik mekatronika sinergis (gabungan) dari beberapa cabang ilmu keteknikan, seperti teknik mesin/mekanik, teknik kendali, teknik elektro, dan ilmu komputasi (computer science, software and hardware).</p>
+<p>Kompetensi Keahlian Teknik Mekatronika di SMK Negeri Katapang telah ada sejak tahun 2014 dimulai dengan program 3 tahun. Program 4 tahun dimulai pada tahun 2017. Dan ketika kurikulum berubah ke kurikulum Merdeka di tahun 2021, Masa pembelajaran di ubah menjadi 3 tahun kembali</p>
+<br>
+<br>
+<br>
+<h2 style="color : black; text-align : center;"><i>~Jadilah teknisi yang profesional dan berakhlak mulia~</i></h2>
+</div>
+
+<div class="isi isi-animation">
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<h2 id="tei">Tujuan</h2>
+<br>
+<br>
+</center>
+<br>
+	<center><b><h3>TEKNIK ELEKTRONIKA INDUSTRI</h3></b></center>
+<h4>Tujuan Kompetensi Keahlian</h4>
+<p>Sekolah Menengah Kejuruan (SMK) sebagai bentuk satuan pendidikan kejuruan sebagaimana ditegaskan dalam penjelasan Pasal UU SISDIKNAS, merupakan pendidikan menengah yang mempersiapkan peserta didik terutama untuk bekerja dalam bidang tertentu. Tujuan umum dan tujuan khusus pendidikan menengah kejuruan adalah sebagai berikut.</p> 
+<ul>
+<li><h4>Tujuan Khusus</h4></li>
+<ol>
+<li> Menyiapkan peserta didik agar menjadi manusia produktif, mampu bekerja mandiri, mengisi lowongan pekerjaan yang ada di dunia usaha dan dunia industri sebagai tenaga kerja tingkat menengah sesuai dengan kompetensi dalam program keahlian Elektronika Industri;</li>
+<li>Menyiapkan peserta didik agar mampu memilih karier, ulet dan gigih dalam berkompetisi, beradaptasi di lingkungan kerja, dan mengembangkan sikap profesional dalam bidang keahlian Elektronika Industri;</li>
+<li>Membekali peserta didik dengan ilmu pengetahuan, teknologi, dan seni, agar mampu mengembangkan diri di kemudian hari baik secara mandiri maupun melalui jenjang pendidikan yang lebih tinggi;</li>
+<li>Membekali peserta didik dengan kompetensi-kompetensi yang sesuai dengan program keahlian Elektronika Industri.</li>
+</ol>
+</ul>
+ <ul>
+<li><h4>Tujuan Paket Keahlian</h4></li>
+<ol>
+<li>Microprocessor & Microcontroller Programming</li>
+<li>Programmable Logic Control Programming</li>
+<li>Pneumatic & Electropneumatic</li>
+<li>Industrial Process Control</li>
+</ol>
+</ul>
+<center><b><h3 id="meka">MEKATRONIKA</h3></b></center>
+<h4>Tujuan Kompetensi Keahlian</h4>
+<p>Sekolah Menengah Kejuruan (SMK) sebagai bentuk satuan pendidikan kejuruan sebagaimana ditegaskan dalam penjelasan Pasal UU SISDIKNAS, merupakan pendidikan menengah yang mempersiapkan peserta didik terutama untuk bekerja dalam bidang tertentu</p>
+<ul>
+<h4>Tujuan Paket Keahlian:</h4>
+<ol>
+<li>Mampu mengoperasikan Mesin Perkakas Konvensional</li>
+<li>Mampu mengoperasikan peralatan kelistrikan</li>
+<li>Mampu mengoperasikan peralatan elektronik</li>
+<li>Mampu mengoperasikan peralatan pneumatik</li>
+<li>Mampu mengoperasikan peralatan hidrolik</li>
+<li>Mampu mengoperasikan Programmable Logic Controller (PLC)</li>
+<li>Mampu mengoperasikan Sistem Robot (Handling Sistem)</li>
+</ol>
+</ul>
+</div>
+
+<div class="isi isi-animation">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+
+<h2>Materi</h2>
+
+<br>
+<br>
+</center>
+
+
+<ul>
+
+<h3>  Dasar kompetensi</h3>
+<li>Menerapkan dasar-dasar kelistrikan</li>
+<li>Menerapkan dasar-dasar elektronika</li>
+<li>Menerapkan dasar-dasar teknik digital</li>
+<li>Menerapkan Keselamatan, Kesehatan Kerja (K3)</li>
+
+<br>
+<h3>Kompetensi</h3>
+
+<h4>Teknik elektronika industri</h4>
+
+
+<li>Mengukur besaran-besaran listrik dalam rangkaian elektronika</li>
+<li>Menerapkan konsep elektronika digital dan rangkaian elektronika komputer</li>
+<li>Menerapkan sistem mikroprosesor</li>
+<li>Mengoperasikan sistem operasi komputer</li>
+<li>Mengoperasian software aplikasi program dan gambar</li>
+<li>Menggambar teknik elektronika menggunakan komputer</li>
+<li>Mengoperasikan rangkaian elektronika terapan</li>
+<li>Mengoperasikan power supply elektronika industri</li>
+<li>Memahami komunikasi data sinyal digital antar peralatan elektronika</li>
+<li>Merakit perangkat keras komputer</li>
+<li>Memprogram peralatan sistem pengendali elektronik yang berkaitan akses I/O berbantuan mikroprosesor dan mikrokontroller</li>
+<li>Memprogram peralatan sistem pengendali elektronik yang berkaitan dengan I/O berbantuan PLC dan komputer</li>
+<li>Mengerjakan dasar-dasar pekerjaan bengkel elektronika</li>
+<li>Melaksanakan pemeliharaan peralatan elektronika sistem pengendali elektronika</li>
+<li>Merakit peralatan dan perangkat elektronik sistem pengendali elektronika</li>
+<li>Melaksanakan pemeliharaan peralatan elektronik sistem otomasi elektronika</li>
+<li>Merakit peralatan dan perangkat elektronik sistem otomasi elektronika</li>
+
+<h4>Mekatronika</h4>
+
+<li>mengoperasikan Mesin Perkakas Konvensional</li>
+<li>mengoperasikan peralatan kelistrikan</li>
+<li>mengoperasikan peralatan elektronik</li>
+<li>mengoperasikan peralatan pneumatik</li>
+<li>mengoperasikan peralatan hidrolik</li>
+<li>mengoperasikan Programmable Logic Controller (PLC)</li>
+<li>mengoperasikan Sistem Robot (Handling Sistem)</li>
+
+
+
+</ul>
+</div>
+
+<div class="isi isi-animation">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+
+<h2>Fasilitas
+</h2>
+
+</center>
+<br>
+<br>
+
+ <p>Fasilitas yang ada pada bengkel program keahlian Elektronika Industri, yaitu sebagai berikut:</p>
+ <br>
+    <ul>
+        <li>Area Kerja Bangku</li>
+        <p>Kerja Bangku Adalah pekerjaan perkakas tangan yang di gunakan untuk melakukan pembentukan, perbaikan dan perakitan yang sesuai dengan masing-masing fungsi peralatan tangan dengan mesin dan semua pekerjaan dilakukan di atas meja kerja (work bench). Kerja bangku meliputi pekerjaan yang bisa atau dapat dilakukan diatas meja. Contohnya: Mengikir, mengetap, menggeerinda ,menandai, menggergaji, menekuk, mengebor dan  pekerjaan merakit serta finishing.</p><br>
+       <center>
+	   <img src="area-kerja-bangku.jpg">
+	   </center>
+	   <li>Area Kerja Pneumatik</li>
+        <p>Pneumatik berasal dari kata dasar <i>pnue</i> yang berarti udara tekan dan <i>matik</i> yang berarti ilmu atau hal-hal yang berhubungan dengan sesuatu, sehingga arti lengkap pneumatik adalah ilmu/hal-hal yang berhubungan dengan udara bertekanan</p><br>
+       <center>
+	   <img src="pneumatik.jpg">
+	   </center>
+	   <li>Ruang Materi</li>
+        <p>Ruangan yang diperuntukkan sebagai kelas biasa yang berarti tidak digunakan untuk keperluan praktek siswa dalam memenuhi mata pelajaran produktif.</p><br>
+		<center>
+	   <img src="ruang-materi.jpg">
+		</center>
+		<li>Ruang Toolman</li>
+        <p>Ruang yang di fungsikan sebagai ruang penyimpanan alat dan bahan yang dibutuhkan dalam pembelajaran produktif.</p>
+		<center>
+		<img src="ruang-toolman.jpg">
+		</center>
+		<li>Ruang Pelarutan</li>
+		<br>
+		<center>
+		<img src="ruang-pelarutan.jpg">
+		</center>
+		<br>
+		<br>
+		<center><h3>Fasilitas Lainnya</h3></center>
+		<br>
+		<li> Area pembuatan rangkaian elektronika</li>
+		<li>Area kerja PLC</li>
+		<li>Trainer Mesin Stamping</li>
+		<li>Trainer Mikroprosesor dan Mikrokontroler</li>
+		<li>Trainer Instalasi Listrik</li>
+		<li>Mesin bor, cutting and bending plat</li>
+		<li>Trainer robotik</li>
+		<li>Mesin Bubut Konvensional</li>
+		<li>Mesin Las Listrik</li>
+		<li>Mesin Bor Listrik</li>
+		<li>Trainer Handling Systen & Robotik</li>
+		<li>Trainer Panel Kelistrikan</li>
+		<li>Motor 3 Fasa</li>
+		<li>Trainer Hidrolik</li>
+		<li>Trainer Pneumatik Murni</li>
+		<li>Trainer Elektropneumatik</li>		
+		
+	</ul>
+
+</div>
+
+<div class="isi isi-animation">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+
+<h2>Detail</h2>
+<br>
+<br>
+
+</center>
+
+	<table border="0" cellpadding="8" cellspacing="0">
+
+    <tr>
+     <th>Nama jurusan/Konsentrasi</th>
+     <th> : </th>
+     <td>Elektronika industri</td>
+    </tr>
+
+    <tr>
+     <th>Tahun Didirikan</th>
+     <th> : </th>
+     <td >1999</td>
+    </tr>
+
+    <tr>
+     <th>Masa Belajar</th>
+     <th> : </th>
+     <td>3 Tahun</td>
+     </tr>
+  
+    <tr>
+     <th>Kurikulum</th>
+     <th> : </th>
+     <td> pk </td>
+    </tr>
+
+    <tr>
+     <th>Kerjasama Industri</th>
+     <th> : </th>
+     <td> PT Len,Tembaga Elektronika Negara,PT Pindai,PT Inti, PLN,Telkom.</td>
+    </tr>
+
+    <tr>
+     <th style="vertical-align : top;">Prestasi</th>
+     <th style="vertical-align : top;"> : </th>
+     <td style="vertical-align : top;"> <ul>
+	 <li>Juara 1 Lomba Keterampilan Siswa Electronic Application tingkat Kabupaten Bandung tahun 2019</li>
+	 <li>Perwakilan pameran Lomba Keterampilan siswa ke 26 Tingkat Nasional di Lombok pada tahun 2018</li>
+	 </ul> </td>
+    </tr>
+	
+	
+	<tr>
+	<td colspan="3"> <br> </td>
+	<tr>
+		<tr>
+	<td colspan="3"> <br> </td>
+	<tr>
+	
+    <tr>
+     <th>Nama jurusan/konsentrasi</th>
+     <th> : </th>
+     <td>Mekatronika</td>
+    </tr>
+
+    <tr>
+     <th>Tahun Didirikan</th>
+     <th> : </th>
+     <td >2014</td>
+    </tr>
+
+    <tr>
+     <th>Masa Belajar</th>
+     <th> : </th>
+     <td>3 Tahun</td>
+     </tr>
+  
+    <tr>
+     <th>Kurikulum</th>
+     <th> : </th>
+     <td> pk </td>
+    </tr>
+
+    <tr>
+     <th>Kerjasama Industri</th>
+     <th> : </th>
+     <td>PKL dengan PT. Pudak Scientific, Program guru magang dengan PT. Aptech, Kunjungan Industri dengan PT. Sosro</td>
+    </tr>
+
+    <tr>
+     <th style="vertical-align : top;">Prestasi</th>
+     <th style="vertical-align : top;"> : </th>
+     <td style="vertical-align : top;"><ul>
+	 <li > Juara 1 LKS Tingkat Kabupaten pada kategori Robotik Tahun 2019</li>
+	 <li> Juara 1 LKS Tingkat Kabupaten katgotri Panel Kelistrikan Tahun 2019</li>
+	 <li> Peserta LKS Tingkat Provinsi pada kategori Robotik dan Panel Kelistrikan pada tahun 2019</li>
+	 <li> Juara 2 Lomba Inovasi Dishub Kabupaten Bandung Tahun 2019</li>
+	 </ul></td>
+    </tr>
+     
+     
+    <tr>
+     <th style="vertical-align : top;">Denah</th>
+     <th style="vertical-align : top;"> : </th>
+     <td><img src="e-denah.jpeg" style="width : 80%;"></td>
+    </tr>
+
+
+</table>
+
+</div>
+
+<div class="isi isi-animation">
+<center>
+<h2>Profil penulis</h2>
+</center>
+
+<div class="porfile">
+<table>
+	<table border="0" cellpadding="8" cellspacing="0">
+
+    <tr>
+     <th colspan="4"></th>
+    </tr>
+
+    <tr>
+     <td rowspan ="3" ><img src="Rayhan.jpeg" style="width:120;height:150"/></td>
+     <th>Nama</th>
+     <th> : </th>
+     <td>Muhammad Rayhan Fathurrakhman</td>
+    </tr>
+
+    <tr>
+     <th>Alamat</th>
+     <th> : </th>
+     <td >Sanggar Indah Lestari Rt 06 Rw 12</td>
+    </tr>
+
+    <tr>
+     <th>No Hp</th>
+     <th> : </th>
+     <td>081224018624</td>
+
+    
+
+    <tr>
+     <th rowspan ="3"><img src="Kamelia.jpeg" style="width:120;height:150"/></th>
+     <th>Nama</th>
+     <td> : </td>
+     <td>Kamelia Safarina Nurul Anwar</td>
+    </tr>
+
+    <tr>
+     <th >Alamat</th>
+     <th> : </th>
+     <td>Saluyu Selatan Rt 04 Rw 14</td>
+    </tr>
+
+    <tr>
+     <th>No Hp</th>
+     <th> : </th>
+     <td>085722482449</td>
+
+   
+    
+    <tr>
+     <th rowspan ="3"><img src="Rafly.jpeg" style="width:120;height:150"/></th>
+     <th>Nama</th>
+     <td> : </td>
+     <td>Rafly Putra Anggara</td>
+    </tr>
+
+    <tr>
+     <th >Alamat</th>
+     <th> : </th>
+     <td>Jln Bihbul Raya Rt 11 Rw 02</td>
+    </tr>
+
+    <tr>
+     <th>No Hp</th>
+     <th> : </th>
+     <td>088214942380</td>
+
+
+
+    <tr>
+     <th rowspan ="3"><img src="Salma.jpeg" style="width:120;height:150"/></th>
+     <th>Nama</th>
+     <td> : </td>
+     <td>Salma Salsabila</td>
+    </tr>
+
+    <tr>
+     <th>Alamat</th>
+     <th> : </th>
+     <td>Kp cangkuang Rt Rw</td>
+    </tr>
+
+    <tr>
+     <th>No Hp</th>
+     <th> : </th>
+     <td>085871312138</td>
+
+
+
+    <tr>
+     <th rowspan ="3"><img src="Anita.jpeg" style="width:120;height:150"/></th>
+     <th>Nama</th>
+     <td> : </td>
+     <td>Siti Nur Anita</td>
+    </tr>
+
+    <tr>
+     <th>Alamat</th>
+     <th> : </th>
+     <td>Permata Kopo Rt 03 Rw 16</td>
+    </tr>
+
+    <tr>
+     <th>No Hp</th>
+     <th> : </th>
+     <td>0882000436818</td>
+
+
+
+</table>
+</div>
+
+</div>
+
+<div class="isi isi-animation">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+
+<h2>Kaprog</h2>
+<br>
+
+</center>
+
+<center>
+
+<table>
+	<table border="0" cellpadding="4">
+
+    <tr>
+      <th><img src="kaprog.jpeg" style="width:200px;height:300px"/></th>
+    </tr>
+	<tr>
+	 <th>Mamat Rahmat,S.Pd,MM</th>
+	 </tr>
+
+
+</table>
+</center>
+</div>
+
+<script>
+const isi = document.getElementsByClassName("isi");
+isi[0].style.display = "block";
+isi[1].style.display = "none";
+isi[2].style.display = "none";
+isi[3].style.display = "none";
+isi[4].style.display = "none";
+isi[5].style.display = "none";
+isi[6].style.display = "none";
+function a(){
+isi[0].style.display = "block";
+isi[1].style.display = "none";
+isi[2].style.display = "none";
+isi[3].style.display = "none";
+isi[4].style.display = "none";
+isi[5].style.display = "none";
+isi[6].style.display = "none";
+}
+function b(){
+isi[0].style.display = "none";
+isi[1].style.display = "block";
+isi[2].style.display = "none";
+isi[3].style.display = "none";
+isi[4].style.display = "none";
+isi[5].style.display = "none";
+isi[6].style.display = "none";
+}
+function c(){
+isi[0].style.display = "none";
+isi[1].style.display = "none";
+isi[2].style.display = "block";
+isi[3].style.display = "none";
+isi[4].style.display = "none";
+isi[5].style.display = "none";
+isi[6].style.display = "none";
+}
+function d(){
+isi[0].style.display = "none";
+isi[1].style.display = "none";
+isi[2].style.display = "none";
+isi[3].style.display = "block";
+isi[4].style.display = "none";
+isi[5].style.display = "none";
+isi[6].style.display = "none";
+}
+function e(){
+isi[0].style.display = "none";
+isi[1].style.display = "none";
+isi[2].style.display = "none";
+isi[3].style.display = "none";
+isi[4].style.display = "block";
+isi[5].style.display = "none";
+isi[6].style.display = "none";
+}
+function f(){
+isi[0].style.display = "none";
+isi[1].style.display = "none";
+isi[2].style.display = "none";
+isi[3].style.display = "none";
+isi[4].style.display = "none";
+isi[5].style.display = "block";
+isi[6].style.display = "none";
+}
+function g(){
+isi[0].style.display = "none";
+isi[1].style.display = "none";
+isi[2].style.display = "none";
+isi[3].style.display = "none";
+isi[4].style.display = "none";
+isi[5].style.display = "none";
+isi[6].style.display = "block";
+}
+</script>
+
+</body>
+
+</html>
+
